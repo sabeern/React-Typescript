@@ -1,20 +1,15 @@
-import Message from "./components/Message";
-import Person from "./components/Person";
-import PersonList from "./components/PersonList";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Page1 from "./pages/page1";
+import Page2 from "./pages/Page2";
 
 function App() {
-  const personDetails = { firstName: "Sabeer", lastName: "Neyyan" };
-  const personList = [
-    { firstName: "anees", lastName: "t" },
-    { firstName: "sabeer", lastName: "n" },
-    { firstName: "sawaf", lastName: "p" },
-  ];
   return (
-    <>
-      <Message text="messages" count={10} isLogged={false} />
-      <Person personDetails={personDetails} />
-      <PersonList person={personList} />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page1 />}></Route>
+        <Route path="/page2" element={<Page2 />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
