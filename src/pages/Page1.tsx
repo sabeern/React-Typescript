@@ -11,11 +11,11 @@ function Page1() {
     { firstName: "sawaf", lastName: "p" },
   ];
   return (
-    <>
+    <div>
       <Message text="messages" count={10} isLogged={false} />
       <Person personDetails={personDetails} />
       <PersonList person={personList} />
-    </>
+    </div>
   );
 }
 
