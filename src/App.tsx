@@ -10,6 +10,8 @@ import Page7 from "./pages/Page7";
 import { UserContextProvider } from "./store/UserContext";
 import Page8 from "./pages/Page8";
 import Page9 from "./pages/Page9";
+import Page10 from "./pages/Page10";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
             <Route path="/page6" element={<Page6 />}></Route>
             <Route path="/page7" element={<Page7 />}></Route>
             <Route path="/page9" element={<Page9 />}></Route>
+            <Route
+              path="/page10"
+              element={<Page10 isLogged={true} component={Dashboard} />}
+            ></Route>
           </Routes>
         </BrowserRouter>
       </ThemeContextProvider>
