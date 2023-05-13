@@ -15,6 +15,7 @@ import Dashboard from "./components/Dashboard";
 import Page11 from "./pages/Page11";
 import Page12 from "./pages/Page12";
 import Page13 from "./pages/Page13";
+import Page14 from "./pages/Page14";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/page11" element={<Page11 />}></Route>
             <Route path="/page12" element={<Page12 />}></Route>
             <Route path="/page13" element={<Page13 />}></Route>
+            <Route path="/page14" element={<Page14 />}></Route>
             <Route
               path="/page10"
               element={<Page10 isLogged={true} component={Dashboard} />}
