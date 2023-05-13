@@ -13,6 +13,8 @@ import Page9 from "./pages/Page9";
 import Page10 from "./pages/Page10";
 import Dashboard from "./components/Dashboard";
 import Page11 from "./pages/Page11";
+import Page12 from "./pages/Page12";
+import Page13 from "./pages/Page13";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="/page7" element={<Page7 />}></Route>
             <Route path="/page9" element={<Page9 />}></Route>
             <Route path="/page11" element={<Page11 />}></Route>
+            <Route path="/page12" element={<Page12 />}></Route>
+            <Route path="/page13" element={<Page13 />}></Route>
             <Route
               path="/page10"
               element={<Page10 isLogged={true} component={Dashboard} />}
