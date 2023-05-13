@@ -1,5 +1,5 @@
 import React from "react";
-import { buttonProps } from "./form.type";
+import { buttonProps } from "./Form.type";
 function InputForm({ handleClick, handleChange, style }: buttonProps) {
   return (
     <div>
